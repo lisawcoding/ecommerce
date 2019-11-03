@@ -1,0 +1,438 @@
+[
+    {
+      "department": "electronics",
+      "items": [
+        {
+          "price": "$25.91",
+          "photo": "https://images.pexels.com/photos/51383/photo-camera-subject-photographer-51383.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "price": "$67.46",
+          "photo": "https://images.pexels.com/photos/163096/ios-new-mobile-gadget-163096.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "price": "$30.42",
+          "photo": "https://images.pexels.com/photos/1787235/pexels-photo-1787235.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "price": "$70.18",
+          "photo": "https://images.pexels.com/photos/1203803/pexels-photo-1203803.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "price": "$11.21",
+          "photo": "https://images.pexels.com/photos/669228/pexels-photo-669228.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "price": "$17.98",
+          "photo": "https://images.pexels.com/photos/2209385/pexels-photo-2209385.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "price": "$56.45",
+          "photo": "https://images.pexels.com/photos/594452/pexels-photo-594452.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        }
+      ]
+    },
+    {
+      "department": "baby",
+      "items": [
+        {
+          "price": "$29.92",
+          "photo": "https://images.pexels.com/photos/101537/baby-boy-hat-covered-101537.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Baby",
+          "product": "Juice - Orangina",
+          "price": "$18.61",
+          "photo": "https://images.pexels.com/photos/12211/pexels-photo-12211.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Baby",
+          "product": "Papayas",
+          "price": "$75.93",
+          "photo": "https://images.pexels.com/photos/63637/crocodile-sitting-alligator-animal-63637.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Baby",
+          "product": "Shrimp - 100 / 200 Cold Water",
+          "price": "$34.12",
+          "photo": "https://images.pexels.com/photos/272056/pexels-photo-272056.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Baby",
+          "product": "Strawberries - California",
+          "price": "$25.28",
+          "photo": "https://images.pexels.com/photos/1166473/pexels-photo-1166473.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Baby",
+          "product": "Wine - Red, Concha Y Toro",
+          "price": "$3.96",
+          "photo": "https://images.pexels.com/photos/63634/toy-donkey-plush-animal-63634.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Baby",
+          "product": "Table Cloth 62x120 White",
+          "price": "$1.58",
+          "photo": "https://images.pexels.com/photos/159080/still-life-teddy-white-read-159080.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        }
+      ]
+    },
+    {
+      "department": "garden",
+      "items": [
+        {
+          "department": "Garden",
+          "product": "Bagelers - Cinn / Brown",
+          "price": "$63.61",
+          "photo": "https://images.pexels.com/photos/17666/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Garden",
+          "product": "Kohlrabi",
+          "price": "$47.24",
+          "photo": "https://images.pexels.com/photos/158028/bellingrath-gardens-alabama-landscape-scenic-158028.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Garden",
+          "product": "Muffin Batt - Carrot Spice",
+          "price": "$68.22",
+          "photo": "https://images.pexels.com/photos/1732419/pexels-photo-1732419.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Garden",
+          "product": "Icecream - Dstk Super Cone",
+          "price": "$54.47",
+          "photo": "https://images.pexels.com/photos/5808/food-healthy-vegetables-village.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Garden",
+          "product": "Cake Circle, Paprus",
+          "price": "$39.57",
+          "photo": "https://images.pexels.com/photos/407083/vienna-belvedere-wien-schloss-407083.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Garden",
+          "product": "Capon - Breast, Wing On",
+          "price": "$37.75",
+          "photo": "https://images.pexels.com/photos/35847/summer-still-life-daisies-yellow.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Garden",
+          "product": "Cleaner - Comet",
+          "price": "$48.52",
+          "photo": "https://images.pexels.com/photos/1038260/pexels-photo-1038260.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        }
+      ]
+    },
+    {
+      "department": "books",
+      "items": [
+        {
+          "department": "Books",
+          "product": "Wheat - Soft Kernal Of Wheat",
+          "price": "$28.59",
+          "photo": "https://images.pexels.com/photos/51342/books-education-school-literature-51342.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Books",
+          "product": "Muffin Mix - Carrot",
+          "price": "$66.90",
+          "photo": "https://images.pexels.com/photos/176103/pexels-photo-176103.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Books",
+          "product": "Pepper - Yellow Bell",
+          "price": "$14.98",
+          "photo": "https://images.pexels.com/photos/1130980/pexels-photo-1130980.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Books",
+          "product": "Veal - Inside, Choice",
+          "price": "$48.90",
+          "photo": "https://images.pexels.com/photos/1809340/pexels-photo-1809340.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        }
+      ]
+    },
+    {
+      "department": "toys",
+      "items": [
+        {
+          "department": "Toys",
+          "product": "Butter Ripple - Phillips",
+          "price": "$43.75",
+          "photo": "https://images.pexels.com/photos/981588/pexels-photo-981588.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Toys",
+          "product": "Vinegar - Tarragon",
+          "price": "$21.97",
+          "photo": "https://images.pexels.com/photos/163036/mario-luigi-yoschi-figures-163036.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Toys",
+          "product": "Rosemary - Fresh",
+          "price": "$18.37",
+          "photo": "https://images.pexels.com/photos/346804/pexels-photo-346804.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Toys",
+          "product": "Mussels - Cultivated",
+          "price": "$26.63",
+          "photo": "https://images.pexels.com/photos/1660662/pexels-photo-1660662.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500f"
+        },
+        {
+          "department": "Toys",
+          "product": "Kellogs All Bran Bars",
+          "price": "$63.48",
+          "photo": "https://images.pexels.com/photos/243206/pexels-photo-243206.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Toys",
+          "product": "Coke - Diet, 355 Ml",
+          "price": "$66.56",
+          "photo": "https://images.pexels.com/photos/226597/pexels-photo-226597.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Toys",
+          "product": "V8 - Berry Blend",
+          "price": "$58.69",
+          "photo": "https://images.pexels.com/photos/955793/pexels-photo-955793.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        }
+      ]
+    },
+    {
+      "department": "shoes",
+      "items": [
+        {
+          "department": "Shoes",
+          "product": "Vinegar - Raspberry",
+          "price": "$33.07",
+          "photo": "https://images.pexels.com/photos/66259/sports-shoes-running-shoes-sneakers-marathon-shoes-66259.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Shoes",
+          "product": "Lychee - Canned",
+          "price": "$25.42",
+          "photo": "https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Shoes",
+          "product": "Bread - Hot Dog Buns",
+          "price": "$76.36",
+          "photo": "https://images.pexels.com/photos/267294/pexels-photo-267294.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Shoes",
+          "product": "Chicken - Whole",
+          "price": "$36.07",
+          "photo": "https://images.pexels.com/photos/2618794/pexels-photo-2618794.jpeg?auto=compress&cs=tinysrgb&dpr=1&fit=crop&h=200&w=280"
+        },
+        {
+          "department": "Shoes",
+          "product": "Container - Clear 16 Oz",
+          "price": "$2.06",
+          "photo": "https://images.pexels.com/photos/266840/pexels-photo-266840.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Shoes",
+          "product": "Juice - Ocean Spray Kiwi",
+          "price": "$15.07",
+          "photo": "https://images.pexels.com/photos/267320/pexels-photo-267320.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Shoes",
+          "product": "Tea - Grapefruit Green Tea",
+          "price": "$28.98",
+          "photo": "https://images.pexels.com/photos/1445696/pexels-photo-1445696.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Shoes",
+          "product": "Seedlings - Mix, Organic",
+          "price": "$62.04",
+          "photo": "https://images.pexels.com/photos/292999/pexels-photo-292999.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Shoes",
+          "product": "Apricots - Halves",
+          "price": "$37.19",
+          "photo": "https://images.pexels.com/photos/1032110/pexels-photo-1032110.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Shoes",
+          "product": "Asparagus - Frozen",
+          "price": "$91.73",
+          "photo": "https://images.pexels.com/photos/292998/pexels-photo-292998.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Shoes",
+          "product": "Black Currants",
+          "price": "$2.82",
+          "photo": "https://images.pexels.com/photos/1280064/pexels-photo-1280064.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        }
+      ]
+    },
+    {
+      "department": "beauty",
+      "items": [
+        {
+          "department": "Beauty",
+          "product": "Mints - Striped Red",
+          "price": "$29.98",
+          "photo": "https://images.pexels.com/photos/212236/pexels-photo-212236.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Beauty",
+          "product": "Beets - Mini Golden",
+          "price": "$83.17",
+          "photo": "https://images.pexels.com/photos/2113855/pexels-photo-2113855.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Beauty",
+          "product": "Coffee - Almond Amaretto",
+          "price": "$37.94",
+          "photo": "https://images.pexels.com/photos/301367/pexels-photo-301367.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Beauty",
+          "product": "Yogurt - Cherry, 175 Gr",
+          "price": "$86.86",
+          "photo": "https://images.pexels.com/photos/3119/fashion-girl-makeup-paint.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Beauty",
+          "product": "Soup - Canadian Pea, Dry Mix",
+          "price": "$53.61",
+          "photo": "https://images.pexels.com/photos/234220/pexels-photo-234220.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Beauty",
+          "product": "Icecream - Dstk Super Cone",
+          "price": "$40.36",
+          "photo": "https://images.pexels.com/photos/90297/pexels-photo-90297.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Beauty",
+          "product": "Oil - Hazelnut",
+          "price": "$25.85",
+          "photo": "https://images.pexels.com/photos/1327689/pexels-photo-1327689.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Beauty",
+          "product": "Wine - Pinot Noir Pond Haddock",
+          "price": "$50.94",
+          "photo": "https://images.pexels.com/photos/72876/pexels-photo-72876.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        }
+      ]
+    },
+    {
+      "department": "clothing",
+      "items": [
+        {
+          "department": "Clothing",
+          "product": "Sauce - Black Current, Dry Mix",
+          "price": "$81.70",
+          "photo": "https://images.pexels.com/photos/934063/pexels-photo-934063.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Clothing",
+          "product": "Wine - Red, Colio Cabernet",
+          "price": "$28.01",
+          "photo": "https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Clothing",
+          "product": "Olives - Nicoise",
+          "price": "$3.23",
+          "photo": "https://images.pexels.com/photos/325876/pexels-photo-325876.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        }
+      ]
+    },
+    {
+      "department": "Grocery",
+      "items": [
+        {
+          "department": "Grocery",
+          "product": "Eggplant - Asian",
+          "price": "$30.50",
+          "photo": "https://images.pexels.com/photos/2606525/pexels-photo-2606525.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Grocery",
+          "product": "Soup Bowl Clear 8oz92008",
+          "price": "$47.38",
+          "photo": "https://images.pexels.com/photos/2985167/pexels-photo-2985167.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Grocery",
+          "product": "Bread - Sticks, Thin, Plain",
+          "price": "$81.23",
+          "photo": "https://images.pexels.com/photos/46174/strawberries-berries-fruit-freshness-46174.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Grocery",
+          "product": "Sauce - Salsa",
+          "price": "$70.60",
+          "photo": "https://images.pexels.com/photos/1992912/pexels-photo-1992912.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Grocery",
+          "product": "Garbage Bags - Clear",
+          "price": "$67.72",
+          "photo": "https://images.pexels.com/photos/128402/pexels-photo-128402.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        }
+      ]
+    },
+    {
+      "department": "home",
+      "items": [
+        {
+          "department": "Home",
+          "product": "Pickerel - Fillets",
+          "price": "$5.37",
+          "photo": "https://images.pexels.com/photos/545012/pexels-photo-545012.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Home",
+          "product": "Pickerel - Fillets",
+          "price": "$71.20",
+          "photo": "https://images.pexels.com/photos/545034/pexels-photo-545034.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Home",
+          "product": "Pickerel - Fillets",
+          "price": "$19.25",
+          "photo": "https://images.pexels.com/photos/775219/pexels-photo-775219.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Home",
+          "product": "Pickerel - Fillets",
+          "price": "$9.25",
+          "photo": "https://images.pexels.com/photos/2062431/pexels-photo-2062431.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Home",
+          "product": "Pickerel - Fillets",
+          "price": "$18.21",
+          "photo": "https://images.pexels.com/photos/584399/living-room-couch-interior-room-584399.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Home",
+          "product": "Pickerel - Fillets",
+          "price": "$23.57",
+          "photo": "https://images.pexels.com/photos/133919/pexels-photo-133919.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Home",
+          "product": "Pickerel - Fillets",
+          "price": "$11.23",
+          "photo": "https://images.pexels.com/photos/895227/pexels-photo-895227.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        },
+        {
+          "department": "Home",
+          "product": "Pickerel - Fillets",
+          "price": "$28.28",
+          "photo": "https://images.pexels.com/photos/276715/pexels-photo-276715.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        }
+      ]
+    }
+  ]

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="keywords" content="買賣，報價, bid, buy" />
+  <meta name="description" content="最專業的線上購物平台, most professional online shopping mall" />
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!-- <meta name="viewport" content="width=device-width", initial-scale=1.0> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
+
+  <link rel="stylesheet" type="text/css" href="header-footer.css">
+  <link rel="stylesheet" type="text/css" href="myProduct.css">
+  <link rel="shortcut icon" href="./img/logo.jpg">
+  
+  <!-- <link rel="shortcut icon" href="../header-footer/tolisacoding-logo.png"> -->
+  <title>Product Webpage</title>
+</head>
+
+<body>
+        <header>
+                <nav class="nav-1">
+                  <div class="width-1200">
+                    <div class="hamburger"><span></span><span></span><span></span></div>
+                    <div class="logo">
+                      <a href="index.html">
+                            <h1><span id="curvedarrow"></span><span style="color: orange">My</span>Mall</h1>
+                          </a>
+                    </div>
+                    <div class="right">
+                      <ul>
+                        <li><a href="#" class="login">Login</a></li>|
+                        <li><a href="#" class="register">Register</a></li>|
+                        <li><i class="fas fa-user-circle"></i></li>
+                        <li class="shopping-cart">
+                            <a href="cart.html">
+                                <i class="fas fa-shopping-cart"></i>
+                                <div class="qty">0</div>
+                            </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+                <nav class="nav-2">
+                  <div class="width-1200">
+                    <ul class="tabs">
+                      <li>amazon</li>
+                      <li>ebay</li>
+                      <li>Product</li>
+                      <li>masonry</li>
+                      <li class="active-bg">swiper</li>       
+                    </ul>
+              <div class="back-icon" href="javascript:history.back()"></div>      
+                  <div class="swiper-container news">
+                    <ul class="swiper-wrapper">
+                      <li class="swiper-slide"> 2019 new sales up to 20% off</li>
+                      <li class="swiper-slide"> gift for free</li>
+                      <li class="swiper-slide"> buy 1 get 1 free now</li>
+                    </ul>
+                  </div>
+                  </div>    
+                </nav>
+        </header>
+              <!-- header -->
+
+<!-- content goes here -->
+<!-- product webpage -->
+<section class="path width-1200">
+  <p><a href="index.html">Shop </a>><span  class="department"style="margin: 0 5px">></span></p>
+</section>
+<section class="product-div width-1200">
+  <div class="left">
+    <div class="main-img">
+      <h1>1</h1>
+        <div class="img-zoon-container">
+          <img src="#" id="myimage">             
+        </div>
+    </div>
+    <p>Roll over image to zoom in</p>
+<!--     <div class="small-img-div">
+      <div class="inner swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide clone"><div class="img-wrapper"><img src="https://source.unsplash.com/275x270/?clothing"></div></div>  
+        </div>
+      </div>
+    </div>
+      <div class="page-index"><span class="current-page">1</span>/<span class="total-page"></span></div>   -->    
+  </div>
+  <div class="right">
+        <div id="myresult" class="img-zoom-result"></div>
+    <h1 class="product-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et</h1>
+    <form action="" method="get">
+      <div class="spec">
+        <div class="title">spec</div>
+        <div class="custom-select">
+          <select name="size">
+            <!-- <option value="select" class="selected select">Select</option> -->
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>       
+            <option value="xl">XL</option>       
+          </select>          
+        </div>
+      </div>
+      <div class="qty">
+        <div class="title">qty</div>
+        <div class="option">
+          <div class="subtract"><div></div></div>
+          <input name="qty" type="number" name="qty" min="1" value="1" pattern="[2-9]">
+          <div class="add"><div></div></div>
+        </div>
+      </div>
+      <div class="amount">
+        <div class="title">price</div> 
+        <!-- <h1>USD<input type="text" name="price" value="100"><span class="price" contenteditable="true">100</span></h1> -->
+        <!-- <p>USD<span class="price-per"></span></p> -->
+        <h1>USD<span class="price-total"></span></h1>
+        <p class="note">(NTD <span class="twd"></span>)</p>
+      </div> 
+    <!-- <input type="submit" name="" value="BUY NOW" class="active-bg"> -->
+    <!-- <a href="cart.html" target="_blank"> -->
+    <input type="submit" name="" value="ADD TO CART">
+  <!-- </a> -->
+    </form>
+    <div class="small-img-div">
+      <div class="inner swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide clone">
+                <h1></h1>
+                <div class="img-wrapper"><img src=""></div>
+        </div>  
+        </div>   
+      </div>
+          <div class="swiper-button-prev arrow"></div>
+          <div class="swiper-button-next arrow"></div> 
+          <div class="page-index"><span class="current-page">1</span>/<span class="total-page"></span></div> 
+    </div>
+
+        <div class="info-2">
+      <!-- <h3><img src="guarantee.png"><span>guarantee shopping safe money back</span></h3> -->
+      <h3><i class="fas fa-stamp"></i><span>guarantee shopping safe money back</span></h3>
+      <h3><i class="fas fa-truck"></i><span>one day shipping</span></h3>     
+    </div>  
+  </div>
+</section>  
+
+<section class="description">
+  <div class="width-1200">
+    <div class="tab">
+      <p class="title tab-active">details</p>
+      <p class="title">shipping information</p>
+      <p class="title">guarantee</p>
+    </div>
+    <div class="box">
+      <div class="content show">
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quidem totam veniam soluta fuga quis.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque.</li>
+        <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem error doloribus illo mollitia ipsa quas fugiat ea porro! Sint, consequatur.</li>
+        
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab odit, blanditiis fugit alias error quas veritatis, fugiat nisi sint labore soluta dolorum perferendis quidem velit eaque officiis asperiores tenetur! Cum suscipit iure eos, similique tenetur dolores architecto.</div>
+      <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nulla vitae dolorem earum! Velit quos necessitatibus placeat debitis odit perferendis at, architecto quo accusantium sequi. Unde incidunt qui voluptatibus deleniti vel tenetur ad dolore eveniet. Minima quis dignissimos cupiditate porro perspiciatis, iusto doloribus consectetur, ipsam ab autem, doloremque corrupti vel.
+      </div>
+      <div class="content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam dignissimos porro, impedit laboriosam sapiente sit mollitia, incidunt repellat blanditiis delectus animi totam nulla sequi temporibus quasi doloremque!
+        <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, quasi ratione? Molestiae numquam minus consequuntur.
+      </div>
+    </div>    
+</section>
+
+<!-- product webpage -->
+<!-- content goes here -->
+
+<!-- tool-div -->
+<section class="tool-div">
+        <div class="phone-call">
+          <i class="fas fa-phone-volume"></i>
+        </div>
+        <div class="app">
+          <a href="http://line.me/ti/p/@bqk1207g" rel="nofollow" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+          </a>       
+        </div>
+      <div class="message-icon"><i class='far fa-comment-dots call-icon'></i></div>
+      <div class="go-top-btn"></div>
+      <div class="overlay"></div>  
+      <div class="call-out-div">
+          <div class="call-btn" class="call-btn">
+              <a href="tel:+886908117599">
+                  <h1>CALL NOW</h1>
+              </a>  
+          </div>
+          <div class="cross"></div>
+          <div class="info">
+              <h1>TEL: XXXXXXX</h1>
+              <h1>Business hours:</h1>
+              <p>xxx</p>
+              <p>xxx</p>
+          </div> 
+      </div>
+    </section>
+<!-- tool-div -->
+
+<!-- footer -->
+<footer>
+
+      <p>Good Coding Company </p>
+      <p>Location: Taipe Taiwan  Tel: +886 2 1234567</p>
+      <p>&#9400;tolisacoding, Inc.</p>
+</footer>
+<!-- footer -->
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+<script type="text/javascript" src="header-footer.js"></script>
+<script type="text/javascript" src="myProduct.js"></script>
+</body>
+</html>

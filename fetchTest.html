@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fetch Test</title>
+
+<style>
+ img {
+     width: 250px;
+ }
+</style>
+</head>
+
+<body>
+<h1></h1>
+    <script>
+// var url="fake-info-33.json";
+//     fetch(url, {
+//         // method: "POST",
+//         // body: JSON.stringify({
+//         //     name: "blue",
+//         //     sex: "male"
+//         // })
+//          })
+//     .then(function(res){
+//         if(!res.ok){
+//             throw Error("res.status");
+//         }
+//         return res.json();
+//         console.log(res);
+//         })
+//     .then(function(data){
+//         console.log(typeof(data));
+//         console.log(data.length);
+//         console.log(data[1].department);
+//         console.log(data[2].items[0].price);
+
+
+//         document.querySelector("h1").innerText=data[1].department;
+           
+//          })
+//     .catch(function(err){
+//         console.log(err);
+//         })
+
+
+localStorage.setItem("myCat", "Tom");
+
+document.querySelector("h1").innerText=localStorage.getItem("myCat");
+
+
+
+
+
+</script>
+</body>
+</html>
