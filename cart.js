@@ -165,13 +165,13 @@
 
     document.querySelector(".confirm").addEventListener("click", function(){
         if(Number(document.querySelector(".total-qty").innerText)>0){
-            this.disabled=true;
             document.querySelectorAll(".table input").forEach(function(input){
                 input.disabled=true;
             })
             document.querySelectorAll(".table .remove").forEach(function(remove){
                 remove.style.display="none";
             })
+            this.style.display="none";
             emptyMessage.style.display="block";
             emptyMessage.querySelector("span").innerText="Congratulations, your order has been successfully sent! "
         } else {

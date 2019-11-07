@@ -379,7 +379,7 @@ header .width-1200 {
         font-size: 2.9vw;
     }
     .tool-div {
-        background: pink;
+        /* background: pink; */
         width: 100%;
         right: 0;
         bottom: 0;
@@ -439,7 +439,7 @@ header .width-1200 {
 }
 .hidden-menu li a {
     display: block;
-    background: pink;
+    /* background: pink; */
     margin-top: 0;
     margin-bottom: 0;
     padding: .5rem 0;
