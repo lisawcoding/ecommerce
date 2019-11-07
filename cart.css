@@ -240,7 +240,7 @@
         .title-bar .shopping-cart {
             display: inline;
             width: 50px;
-            z-index: 99999;
+            z-index: 99;
             margin: 0 auto;
         }
         header .shopping-cart {
