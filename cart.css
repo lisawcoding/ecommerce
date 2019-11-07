@@ -76,8 +76,12 @@
     }
     .table .img-container {
         width: 120px;
-        border: 1px solid gold;
         position: relative;
+    }
+    .table .img-container:after {
+        content: "";
+        display: block;
+        padding-top: 70%;
     }
     .table input[name="qty"] {
         width: 50%;
@@ -137,6 +141,9 @@
     .title-bar .shopping-cart {
         display: none;
     }
+    #my-cart {
+        min-height: calc(100vh - 1.5vw - 37px - 12vw);
+    }
 
     @media only screen and (max-width: 720px) {
         .table .remove button {
@@ -150,7 +157,7 @@
         }
         .table .img-container {
             width: 90px;
-            border: 2px dotted hotpink;
+            /* border: 2px dotted hotpink; */
         }
         .table input[name="qty"] {
             width: 70%;
@@ -161,18 +168,6 @@
         .buy.table {
             position: relative;
         }
-
-        /* .shopping-cart {
-            width: 100%;
-    background: pink;
-    position: absolute;
-    left: 0;
-    margin: 0;
-        } */
-        /* .summary .info div {
-            text-align: right !important;
-        } */
-
     }
 
     @media only screen and (max-width: 560px) {
@@ -249,7 +244,18 @@
             margin: 0 auto;
         }
         header .shopping-cart {
-            display: none;
+            visibility: hidden;
         }       
 
+    }
+
+    .empty-message {
+        text-transform: capitalize;
+        text-align: center;
+        margin:1rem;
+        display: none;
+    }
+    .empty-message a {
+        text-decoration: underline;
+        color: var(--red);
     }

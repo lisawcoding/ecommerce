@@ -251,8 +251,8 @@ document.querySelector(".product-div .right input[type='submit']").addEventListe
     addLocalStorage();
   }
   document.querySelector(".nav-1 .shopping-cart .qty").innerText=localStorage.getItem("shopping-qty");
-  window.history.back();
-  alert("show");
+  // window.history.go(-1);
+  window.location.href="cart.html";
 })
 
 
@@ -353,6 +353,32 @@ function imageZoom(imgID, resultID) {
 
 const imgs=document.querySelectorAll(".product-div img");
 
+// for(var i=0; i<imgs.length; i++) {
+//   imgs[i].addEventListener("load", function(){
+//     if(this.width > this.height) {
+//       zoonContainer.classList.remove("center-v");
+//      zoonContainer.classList.add("center-h") ;
+//      this.style.height="auto";
+//      this.style.width="100%";
+//     } else {
+//        if (window.matchMedia("(max-width:430px)").matches) {
+//             document.querySelector(".small-img-div .inner").style.height="70vw";
+//             this.style.background="pink";
+//         }
+//        else if(window.matchMedia("(max-width:620px)").matches) {
+//         this.style.background="pink";
+//         document.querySelector(".main-img img").style.height="70vw";
+//       }
+//       else {
+//         zoonContainer.classList.remove("center-h");
+//         zoonContainer.classList.add("center-v");
+//         this.style.height="100%";
+//         this.style.width="auto";
+//       }
+
+//     }  
+//   })  
+// }
 for(var i=0; i<imgs.length; i++) {
   imgs[i].addEventListener("load", function(){
     if(this.width > this.height) {
@@ -361,10 +387,30 @@ for(var i=0; i<imgs.length; i++) {
      this.style.height="auto";
      this.style.width="100%";
     } else {
-      zoonContainer.classList.remove("center-h");
-      zoonContainer.classList.add("center-v");
-      this.style.height="100%";
-      this.style.width="auto";
+
+      if (window.matchMedia("(max-width:430px)").matches) {
+        console.log(this.parentNode);
+        // document.querySelectorAll(".small-img-div .img-wrapper").style.height="50vh";
+        this.parentNode.style.height="50vh";
+      }
+ 
+        zoonContainer.classList.remove("center-h");
+        zoonContainer.classList.add("center-v");
+        this.style.height="100%";
+        this.style.width="auto";
     }  
   })  
+}
+
+
+
+
+const shoppingCartQty=document.querySelector(".nav-1 .shopping-cart .qty");
+
+if (localStorage.getItem("qty")==null) {
+  shoppingCartQty.innerText="0";
+  console.log("null");
+} else {
+  shoppingCartQty.innerText=localStorage.getItem("shopping-qty");
+  console.log("qty");
 }

@@ -61,6 +61,8 @@ overlay.addEventListener("click", function(){
 })
 
 
-document.querySelector(".nav-1 .hamburger").addEventListener("click", function(){
-	document.querySelector(".nav-2 .width-1200 .tabs").classList.toggle("show");
+const hiddenMenu=document.querySelector("header .hidden-menu");
+hiddenMenu.innerHTML=document.querySelector(".nav-2 .tabs").innerHTML;
+document.querySelector(".hamburger").addEventListener("click", function(){
+	hiddenMenu.classList.toggle("block");
 })

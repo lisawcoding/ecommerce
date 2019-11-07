@@ -1,5 +1,6 @@
 const productDiv=document.querySelector("#products-div");
 const headerHeight=document.querySelector("header .nav-1").offsetHeight;
+
 const shoppingCartQty=document.querySelector(".nav-1 .shopping-cart .qty");
 
 if (localStorage.getItem("qty")==null) {
@@ -9,14 +10,25 @@ if (localStorage.getItem("qty")==null) {
 }
 
 // shop now button
-document.querySelector("#shop-now").addEventListener("click",function(){
-    window.scrollTo({
-        top: productDiv.offsetTop - headerHeight - 70,
-        behavior: "smooth"
-    })
-})
+// document.querySelector("#shop-now").addEventListener("click",function(){
+//     window.scrollTo({
+//         top: productDiv.offsetTop - headerHeight - 70,
+//         behavior: "smooth"
+//     })
+// })
+document.querySelector("#shop-now").addEventListener("click", function(){
+	
+  var scrollHeight=
+  parseFloat(window.getComputedStyle(document.querySelector("#hero")).height)+parseFloat(window.getComputedStyle(document.querySelector("#discount-banner-div")).height)+parseFloat(window.getComputedStyle(document.querySelector("header .nav-2")).height);
+	
+	document.body.scrollTop = scrollHeight; // For Safari
+  document.documentElement.scrollTop = scrollHeight; // For Chrome, Firefox, IE and Opera
+  })
 
 
+
+
+  
 // add more products
 const url="fake-info-33.json";
 fetch(url)
@@ -28,6 +40,12 @@ fetch(url)
 })
 .then(function(data){
 
+  //temp data in localstorage
+  
+  localStorage.setItem("img", data[0].items[1].photo);
+  localStorage.setItem("department", data[0].department);
+  localStorage.setItem("price", data[0].items[1].price);
+
     // // add more products, best seller
     for(var i=0; i<data.length; i++){
       
@@ -35,7 +53,7 @@ fetch(url)
         document.querySelector(".best-seller-div img").alt=data[i].department+" photo";
         document.querySelector(".best-seller-div .info .department").innerText=data[i].department+" - ";
         document.querySelector(".best-seller-div .price").innerText=data[i].items[1].price;
-        document.querySelector(".best-seller-div h1").innerText=i;
+        // document.querySelector(".best-seller-div h1").innerText=i;
 
         if( i != data.length-1) {
         var cln=document.querySelector(".best-seller-div .product-wrapper").cloneNode(true);
@@ -122,30 +140,47 @@ fetch(url)
           }
         }
 
-        var categoryLoop=setInterval(cateLoop, 2800)
+        var categoryLoop=setInterval(cateLoop, 1000)
 
         departmentDiv.addEventListener("mouseenter", function(){
           clearInterval(categoryLoop);
         })
         departmentDiv.addEventListener("mouseleave", function(){
-          categoryLoop=setInterval(cateLoop, 2800);
+          categoryLoop=setInterval(cateLoop, 1000); 
         })
 
-        categoryBtns.forEach(function(btn){
-          btn.addEventListener("click", function(){
-            clearInterval(categoryLoop);
-              removeClass();
-              this.classList.add("btn-active");
-
-              for(var i=0; i<categoryBtns.length; i++){
-                if(categoryBtns[i].classList.contains("btn-active")){
-                  console.log(i);
-                  categoryContents[i].classList.add("cate-show");
-                  number=i;                  
-                }
-              }
+        if(window.matchMedia("(max-width:760px)").matches){
+          document.querySelectorAll(".department-content-div").forEach(function(div){
+            div.addEventListener("touchstart", function(){
+              clearInterval(categoryLoop);
+            })
+            div.addEventListener("touchend", function(){
+              categoryLoop=setInterval(cateLoop, 1000);
+            })
           })
+        }
+
+      categoryBtns.forEach(function(btn){
+        btn.addEventListener("click", function(){
+          clearInterval(categoryLoop);
+            removeClass();
+            this.classList.add("btn-active");
+
+            for(var i=0; i<categoryBtns.length; i++){
+              if(categoryBtns[i].classList.contains("btn-active")){
+                console.log(i);
+                categoryContents[i].classList.add("cate-show");
+                number=i;                  
+              }
+            }
+            if(window.matchMedia("(max-width:760px)").matches) {
+              categoryLoop=setInterval(cateLoop, 1000);
+              this.style.background="var(--light-grey)";
+              this.style.color="var(--b)";              
+            }
         })
+      })
+        
 // category-department auotloop
 
 
@@ -289,7 +324,6 @@ fetch(url)
     console.log("null");
       localStorage.setItem("cart", JSON.stringify(cart));
   }
-
 })
 .catch(function(err){
     console.log(err);
@@ -358,38 +392,4 @@ document.querySelector(".whats-new-div img").addEventListener("click", function(
     //     console.log(err);
     //     })
 })
-
-
-
-
-
-
-
-
-
-
-
-// if(window.matchMedia("(min-width: 200px)")) {
-//   console.log("1");
-//   var WhatsNewSwiper = new Swiper('.whats-new-div .swiper-container', {
-//     speed: 1500,
-//     spaceBetween: 0,
-//     autoplay: {
-//       delay: 2000,
-//       // disableOnInteraction: false,
-//     },
-//     loop: true,
-//     grabCursor: true,
-//     // navigation: {
-//     //   nextEl: '#hero .swiper-button-next',
-//     //   prevEl: '#hero .swiper-button-prev',
-//     // },
-//     pagination: {
-//       el: '#hero .swiper-pagination',
-//       clickable: true,
-//     },
-//   });
-// }
-
-
 

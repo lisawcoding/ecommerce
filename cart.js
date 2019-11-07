@@ -21,6 +21,7 @@
     const qtyInputs=document.querySelectorAll("#my-cart .buy input[name='qty']");
     // const priceTotals=document.querySelectorAll("#my-cart .price-total");
     const buyCart=document.querySelectorAll("#my-cart .table.buy");
+    const emptyMessage=document.querySelector(".empty-message");
 
     function updateTotal(){
         var TotalQty=0;
@@ -41,6 +42,11 @@
             localStorage.setItem("shopping-qty", document.querySelector(".summary .total-qty").innerText); 
             document.querySelector(".nav-1 .shopping-cart .qty").innerText=localStorage.getItem("shopping-qty");
             document.querySelector(".title-bar .shopping-cart .qty").innerText=localStorage.getItem("shopping-qty");
+
+            
+    if(document.querySelector(".total-qty").innerText=="0"){
+        emptyMessage.style.display="block";
+    }
     }
 
     updateTotal();
@@ -77,10 +83,12 @@
 
     qtyInputs.forEach(function(q){
         q.addEventListener("change", function(){
+            if(this.value<1) {
+                this.value=1;
+            } 
+
             this.parentElement.parentElement.querySelector(".price-total").innerText=this.value* this.parentElement.parentElement.querySelector(".price").innerText.replace("$", "");
-
-            console.log(this.value);
-
+            
             updateTotal();
             priceStyle();
 
@@ -124,3 +132,53 @@
         })   
     }
 
+    const imgs=document.querySelectorAll(".buy img");
+    for(var i=0; i<imgs.length; i++){
+        imgs[i].addEventListener("load", function(){
+            if(this.height > this.width) {
+                this.style.height="100%";
+                this.style.width="auto";
+            }
+        })
+    }
+
+    // document.querySelector(".confirm").addEventListener("click", function(){
+    //     if(Number(document.querySelector(".total-qty").innerText)>0){
+    //         if (window.confirm("Congratulations, your order has been successful sent! \n go back to home page?")) { 
+    //             window.location.href="index.html";
+    //           }
+    //         this.disabled=true;
+    //         document.querySelectorAll(".table input").forEach(function(input){
+    //             input.disabled=true;
+    //         })
+    //         document.querySelectorAll(".table .remove").forEach(function(remove){
+    //             remove.style.display="none";
+    //         })
+    //     } else {
+    //         if (window.confirm("the cart is empty! \n go back to home page?")) { 
+    //             window.location.href="index.html";
+    //           }
+    //     }
+    //     localStorage.clear();
+    // })
+
+
+    document.querySelector(".confirm").addEventListener("click", function(){
+        if(Number(document.querySelector(".total-qty").innerText)>0){
+            this.disabled=true;
+            document.querySelectorAll(".table input").forEach(function(input){
+                input.disabled=true;
+            })
+            document.querySelectorAll(".table .remove").forEach(function(remove){
+                remove.style.display="none";
+            })
+            emptyMessage.style.display="block";
+            emptyMessage.querySelector("span").innerText="Congratulations, your order has been successfully sent! "
+        } else {
+            if (window.confirm("the cart is empty! \n go back to home page?")) { 
+                window.location.href="index.html";
+              }
+              this.disabled=true;
+        }
+        localStorage.clear();
+    })

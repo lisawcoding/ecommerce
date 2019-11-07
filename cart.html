@@ -33,7 +33,7 @@
                 <ul>
                 <li><a href="#" class="login">Login</a></li>|
                 <li><a href="#" class="register">Register</a></li>|
-                <li><i class="fas fa-user-circle"></i></li>
+                <!-- <li><i class="fas fa-user-circle"></i></li> -->
                 <li class="shopping-cart">
                     <a href="cart.html">
                         <i class="fas fa-shopping-cart"></i>
@@ -47,11 +47,9 @@
         <nav class="nav-2">
             <div class="width-1200">
             <ul class="tabs">
-                <li>amazon</li>
-                <li>ebay</li>
-                <li>Product</li>
-                <li>masonry</li>
-                <li class="active-bg">swiper</li>       
+                <li><a href="index.html">Home Page</a></li>      
+                <li><a href="myProduct.html">Product Page</a></li>      
+                <li><a class="active-btn">Shopping Cart Page</a></li>      
             </ul>
         <div class="back-icon" href="javascript:history.back()"></div>      
             <div class="swiper-container news">
@@ -63,6 +61,7 @@
             </div>
             </div>    
         </nav>
+        <nav class="hidden-menu"></nav>
 </header>
 <!-- header -->
 
@@ -81,19 +80,18 @@
                 <div>Unit Price</div>
                 <div>Qty</div>
                 <div>Total</div>
-                <div>remove</div>                
+                <div class="remove">remove</div>                
             </div>
             <li class="shopping-cart">
-                <a href="cart.html">
+                <a>
                     <i class="fas fa-shopping-cart"></i>
                     <div class="qty">0</div>
                 </a>
             </li>
         </div>
-        <!-- <h2>My Shopping Cart</h1> -->
         <div class="items-list-div">
-
         </div>
+        <h1 class="empty-message"><span>the cart is empty </span><a href="index.html">buy something?</a></h1>
         <section class="clone table sample">
             <div>
                 <input type="checkbox" name="" value="">
@@ -118,7 +116,7 @@
         <div class="info">
             <div>Total Qty <b class="total-qty"></b></div>
             <div>Total Amount <b style="color: var(--red);">$</b><span class="total-amount"></span></div>
-            <button>confirm</button>               
+            <button class="confirm">confirm</button>               
         </div>
     </div>
     </section>
