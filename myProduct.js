@@ -416,7 +416,7 @@ if (localStorage.getItem("qty")==null) {
 }
 
 // check different browser
-if(navigator.userAgent.toLowerCase().indexOf("firefox")!=-1) {
-	document.querySelector(".product-div .qty input[name='qty']").setAttribute("type", "text")
-}
+// if(navigator.userAgent.toLowerCase().indexOf("firefox")!=-1) {
+// 	document.querySelector(".product-div .qty input[name='qty']").setAttribute("type", "text")
+// }
 
