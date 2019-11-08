@@ -414,3 +414,9 @@ if (localStorage.getItem("qty")==null) {
   shoppingCartQty.innerText=localStorage.getItem("shopping-qty");
   console.log("qty");
 }
+
+// check different browser
+if(navigator.userAgent.toLowerCase().indexOf("firefox")!=-1) {
+	document.querySelector(".product-div .qty input[name='qty']").setAttribute("type", "text")
+}
+
