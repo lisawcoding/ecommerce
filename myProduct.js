@@ -208,7 +208,7 @@ var item={};
 
 document.querySelector(".product-div .right input[type='submit']").addEventListener("click", function(){
 
-      this.disabled=true;
+      // this.disabled=true;
 
       // var url=new URL(window.location.href);
       // var cartSize=url.searchParams.get('size');
@@ -251,8 +251,11 @@ document.querySelector(".product-div .right input[type='submit']").addEventListe
     addLocalStorage();
   }
   document.querySelector(".nav-1 .shopping-cart .qty").innerText=localStorage.getItem("shopping-qty");
-  // window.history.go(-1);
-  window.location.href="cart.html";
+  document.querySelector("#added-alert").style.display="flex";
+  overlay.style.display="block";
+
+  localStorage.setItem("shopping-qty", parseFloat(localStorage.getItem("shopping-qty"))+parseFloat(localStorage.getItem("qty")))
+  
 })
 
 
@@ -420,3 +423,28 @@ if (localStorage.getItem("qty")==null) {
 // 	document.querySelector(".product-div .qty input[name='qty']").setAttribute("type", "text")
 // }
 
+// alert-box
+const allertBtns=document.querySelectorAll("#added-alert a");
+allertBtns.forEach(function(a){
+  a.addEventListener("mouseenter", function(){
+    allertBtns.forEach(function(a){
+      a.classList.remove("alert-btn-active");
+    })
+    a.classList.add("alert-btn-active");
+  })
+})
+
+const addedAlert=document.querySelector("#added-alert");
+document.querySelector(".cross").addEventListener("click", function(){
+  addedAlert.style.display="none";
+  overlay.style.display="none";
+})
+overlay.addEventListener("click", function(){
+  this.style.display="none";
+  addedAlert.style.display="none";
+})
+
+
+// function goBack() {
+//   window.history.back()
+// }

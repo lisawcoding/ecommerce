@@ -53,7 +53,7 @@ document.querySelector(".tool-div .phone-call").addEventListener("click", functi
 	overlay.classList.toggle("block");	
 	callOutDiv.classList.toggle("flex");
 })
-document.querySelector(".tool-div .cross").addEventListener("click", function(){
+document.querySelector(".cross").addEventListener("click", function(){
 	removeCallOutDiv();
 })
 overlay.addEventListener("click", function(){
@@ -66,3 +66,8 @@ hiddenMenu.innerHTML=document.querySelector(".nav-2 .tabs").innerHTML;
 document.querySelector(".hamburger").addEventListener("click", function(){
 	hiddenMenu.classList.toggle("block");
 })
+
+function goBack() {
+	window.history.go(-1);
+  }
+  

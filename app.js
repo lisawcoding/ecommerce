@@ -7,6 +7,7 @@ if (localStorage.getItem("qty")==null) {
   shoppingCartQty.innerText="0";
 } else {
   shoppingCartQty.innerText=localStorage.getItem("shopping-qty");
+  // shoppingCartQty.innerText=JSON.parse(localStorage.getItem("shopping-qty"));
 }
 
 // shop now button
@@ -307,7 +308,6 @@ fetch(url)
   // click to open a new product page
   var imgContainers=document.querySelectorAll("#products-div a .img-container");
   for(var i=0; i<imgContainers.length; i++) {
-    // console.log(i);
     imgContainers[i].addEventListener("click", function(){
       var url=this.querySelector("img").getAttribute("src");
       var content=this.nextElementSibling.querySelector(".content").innerText;
@@ -355,41 +355,3 @@ swiperContainer.addEventListener("mouseover", function(){
 swiperContainer.addEventListener("mouseout", function(){
   heroSwiper.autoplay.start();
 })
-
-
-
-
-
-document.querySelector(".whats-new-div img").addEventListener("click", function(){
-
-  // localStorage.setItem("img", "https://images.pexels.com/photos/545012/pexels-photo-545012.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
-
-  //   fetch("add-product.json", {
-    //     method: "POST",
-    //     body: JSON.stringify({
-    //         name: "blue",
-    //         sex: "male"
-    //     })
-    //      })
-    // .then(function(res){
-    //     if(!res.ok){
-    //         throw Error("res.status");
-    //     }
-    //     return res.json();
-    //     console.log(res);
-    //     })
-    // .then(function(data){
-    //     console.log(typeof(data));
-    //     console.log(data.length);
-    //     console.log(data[1].department);
-    //     console.log(data[2].items[0].price);
-
-
-    //     // document.querySelector("h1").innerText=data[1].department;
-           
-    //      })
-    // .catch(function(err){
-    //     console.log(err);
-    //     })
-})
-

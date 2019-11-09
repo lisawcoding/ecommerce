@@ -69,7 +69,7 @@
 <!-- content goes here -->
 <!-- product webpage -->
 <section class="path width-1200">
-  <p><a href="index.html">Shop </a>><span  class="department"style="margin: 0 5px">></span></p>
+  <p><a href="index.html">Shop </a>><span  class="department"style="margin: 0 5px">{{department}}</span></p>
 </section>
 <section class="product-div width-1200">
   <div class="left">
@@ -91,9 +91,8 @@
   </div>
   <div class="right">
         <div id="myresult" class="img-zoom-result"></div>
-    <h1 class="product-name">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et</h1>
-    <section class="form">
+    <h1 class="product-name">{{productName}}</h1>
+    <form action="" method="get">
       <div class="spec">
         <div class="title">spec</div>
         <div class="custom-select">
@@ -126,19 +125,21 @@
     <!-- <a href="cart.html" target="_blank"> -->
     <input type="submit" name="" value="ADD TO CART">
   <!-- </a> -->
-    </section>
+    </form>
     <div class="small-img-div">
       <div class="inner swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide clone">
-                <h1></h1>
-                <div class="img-wrapper"><img src=""></div>
+                <h1 v-if="inventory>10">In Stock</h1>
+                <h1 v-else-if="inventory <= 10 && inventory>0">Almost Sold Out</h1>
+                <h1 v-else>Out of Stock</h1>
+                <div class="img-wrapper"><img v-bind:src="img"></div>
         </div>  
         </div>   
       </div>
           <div class="swiper-button-prev arrow"></div>
           <div class="swiper-button-next arrow"></div> 
-          <div class="page-index"><span class="current-page">1</span>/<span class="total-page"></span></div> 
+          <div class="page-index" v-show="index"><span class="current-page">1</span>/<span class="total-page"></span></div> 
     </div>
 
         <div class="info-2">
@@ -171,12 +172,6 @@
     </div>    
 </section>
 
-<section id="added-alert">
-  <div class="cross"></div>
-  <p>added to your cart</p>
-  <a href="index.html" class="shop-btn">keep shopping</a>
-  <a href="cart.html" class="cart-btn alert-btn-active">view cart</a>
-</section>
 <!-- product webpage -->
 <!-- content goes here -->
 
@@ -209,21 +204,44 @@
       </div>
     </section>
 <!-- tool-div -->
-
 <!-- footer -->
 <footer>
 
-      <p>Good Coding Company </p>
-      <p>Location: Taipe Taiwan  Tel: +886 2 1234567</p>
-      <p>&#9400;tolisacoding, Inc.</p>
-</footer>
-<!-- footer -->
+        <p>Good Coding Company </p>
+        <p>Location: Taipe Taiwan  Tel: +886 2 1234567</p>
+        <p>&#9400;tolisacoding, Inc.</p>
+  </footer>
+  <!-- footer -->
 
 
 
 
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
 <script type="text/javascript" src="header-footer.js"></script>
-<script type="text/javascript" src="myProduct.js"></script>
+<!-- <script type="text/javascript" src="myProduct.js"></script> -->
+<!--  -->
+<script>
+    var app= new Vue({
+        el:".product-name",
+        data: {
+            productName: "new product"
+        }
+    })
+    var app= new Vue({
+        el:".department",
+        data: {
+            department: "new depatment"
+        }
+    })
+    var app=new Vue({
+        el:".small-img-div",
+        data:{
+            img: "https://source.unsplash.com/275x270/?baby",
+            inventory: 20,
+            index: true,
+        }
+    })
+</script>
 </body>
 </html>
