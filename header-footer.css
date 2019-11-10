@@ -18,7 +18,7 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    webkit-appearance: none;/*remove safari default setting*/
+    -webkit-appearance: none;/*remove safari default setting*/
     -moz-appearance: none;
     outline: none;
 }
