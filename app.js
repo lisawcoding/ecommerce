@@ -3,7 +3,8 @@ const headerHeight=document.querySelector("header .nav-1").offsetHeight;
 
 const shoppingCartQty=document.querySelector(".nav-1 .shopping-cart .qty");
 
-if (localStorage.getItem("qty")==null) {
+if (localStorage.getItem("qty")==null || isNaN(localStorage.getItem("shopping-qty"))) {
+  console.log("NaN");
   shoppingCartQty.innerText="0";
 } else {
   shoppingCartQty.innerText=localStorage.getItem("shopping-qty");
