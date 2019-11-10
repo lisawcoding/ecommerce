@@ -177,9 +177,9 @@
             })
             this.style.display="none";
             emptyMessage.style.display="block";
-            document.querySelector(".table > div:nth-of-type(1) p").style.visibility="hidden";
+            
             emptyMessage.querySelector("span").innerText="Congratulations, your order has been successfully sent! "
-
+            document.querySelector(".table > div:nth-of-type(1) p").style.visibility="hidden";
         } else {
             if (window.confirm("the cart is empty! \n go back to home page?")) { 
                 window.location.href="index.html";
