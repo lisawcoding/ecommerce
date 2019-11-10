@@ -171,9 +171,14 @@
             document.querySelectorAll(".table .remove").forEach(function(remove){
                 remove.style.display="none";
             })
+            document.querySelectorAll(".table input[name='qty']").forEach(function(input){
+                input.style.background="transparent";
+                input.style.border="none";
+            })
             this.style.display="none";
             emptyMessage.style.display="block";
             emptyMessage.querySelector("span").innerText="Congratulations, your order has been successfully sent! "
+
         } else {
             if (window.confirm("the cart is empty! \n go back to home page?")) { 
                 window.location.href="index.html";
