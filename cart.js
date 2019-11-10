@@ -177,6 +177,7 @@
             })
             this.style.display="none";
             emptyMessage.style.display="block";
+            document.querySelector(".table > div:nth-of-type(1) p").style.visibility="hidden";
             emptyMessage.querySelector("span").innerText="Congratulations, your order has been successfully sent! "
 
         } else {
