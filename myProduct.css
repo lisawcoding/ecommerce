@@ -144,7 +144,7 @@ a {
 	text-align: center;
 	width: 70px;
     height: 28px;
-	border: 1px solid var(--light-grey);
+    border: 1px solid var(--light-grey);
 	outline: none;
 	font-size: 16px;
 	cursor: pointer;
@@ -471,7 +471,6 @@ content: "";
     }
 	.page-index {
         display: block;
-        width: fit-content;
         margin: 0 auto;
         /* font-size: 1.5rem; */
             position: absolute;
@@ -511,11 +510,10 @@ content: "";
         margin-left: 50%;
         transform: translateX(-50%);
         width: 60%;
-        border-radius: 50px;
+        /* border-radius: 50px; */
         height: 37px;
         background: var(--red);
         color: #fff;
-        border: navajowhite;
         letter-spacing: inherit;
     }
     .product-div .right input[type="submit"]:active {

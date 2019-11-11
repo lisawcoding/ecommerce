@@ -1,5 +1,6 @@
 const shoppingCartQty=document.querySelector(".nav-1 .shopping-cart .qty");
 const cart=JSON.parse(localStorage.getItem("cart"));
+const addedAlert=document.querySelector("#added-alert");
 
 shoppingCartQty.innerText=localStorage.getItem("shopping-qty");
 //add more radom images - small-img-div
@@ -252,7 +253,9 @@ document.querySelector(".product-div .right input[type='submit']").addEventListe
     addLocalStorage();
   }
   // shoppingCartQty.innerText=localStorage.getItem("shopping-qty");
-  document.querySelector("#added-alert").style.display="flex";
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+  addedAlert.style.display="flex";
   overlay.style.display="block";
 
   // localStorage.setItem("shopping-qty", parseFloat(localStorage.getItem("shopping-qty"))+parseFloat(localStorage.getItem("qty")))
@@ -437,7 +440,6 @@ allertBtns.forEach(function(a){
   })
 })
 
-const addedAlert=document.querySelector("#added-alert");
 document.querySelector(".cross").addEventListener("click", function(){
   addedAlert.style.display="none";
   overlay.style.display="none";
