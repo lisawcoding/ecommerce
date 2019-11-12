@@ -35,7 +35,7 @@ a {
     margin: 0 auto;
     /* min-height: calc(100vh - 11vw - 3.5rem); */
 }
-input[type="number"] {
+input[type="number"], input[type="submit"], button {
     outline: none;
 /*     -webkit-appearance: none;remove safari default setting */
     -moz-appearance: none;
@@ -48,7 +48,7 @@ input[type="number"]::-webkit-outer-spin-button {
     -moz-appearance: none;
     appearance: none;
     margin: 0; 
-    border-style: solid;
+/*     border-style: solid; */
 }
 
 /* footer */
