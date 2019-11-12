@@ -175,6 +175,9 @@
                 input.style.background="transparent";
                 input.style.border="none";
             })
+            document.querySelectorAll(".table input[type='checkbox']").forEach(function(input){
+                input.style.display="none";
+            })
             this.style.display="none";
             emptyMessage.style.display="block";
             
