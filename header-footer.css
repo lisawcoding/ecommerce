@@ -19,7 +19,7 @@ html, body {
     padding: 0;
     box-sizing: border-box;
 /*     -webkit-appearance: none;/*remove safari default setting*/ */
-    -moz-appearance: none;
+/*     -moz-appearance: none; */
     outline: none;
 }
 body {
@@ -35,15 +35,15 @@ a {
     margin: 0 auto;
     /* min-height: calc(100vh - 11vw - 3.5rem); */
 }
-input {
+input[type="number"] {
     outline: none;
 /*     -webkit-appearance: none;remove safari default setting */
     -moz-appearance: none;
     -webkit-border-radius:0; 
     border-radius:0;
 }
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
