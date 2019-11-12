@@ -18,7 +18,7 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    -webkit-appearance: none;/*remove safari default setting*/
+/*     -webkit-appearance: none;/*remove safari default setting*/ */
     -moz-appearance: none;
     outline: none;
 }
@@ -37,7 +37,7 @@ a {
 }
 input {
     outline: none;
-    -webkit-appearance: none;/*remove safari default setting*/
+/*     -webkit-appearance: none;remove safari default setting */
     -moz-appearance: none;
     -webkit-border-radius:0; 
     border-radius:0;
