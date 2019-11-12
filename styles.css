@@ -199,6 +199,9 @@ button {
 }
 
 /* shop-by-category */
+#department-div {
+    margin-bottom: 3.5vw;
+}
 .department-tab-div {
     display: flex;
     justify-content: space-between;
