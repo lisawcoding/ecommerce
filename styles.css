@@ -199,9 +199,6 @@ button {
 }
 
 /* shop-by-category */
-#department-div {
-    margin-bottom: 3.5vw;
-}
 .department-tab-div {
     display: flex;
     justify-content: space-between;
@@ -357,9 +354,12 @@ button {
     color: #fff;
     /* visibility: hidden; */
 }
-.epartment-content-div .swiper-container {
+/* .department-content-div .swiper-container {
     box-sizing: border-box;
     overflow: hidden;
+} */
+#department-div {
+    margin-bottom: 5vw;
 }
 
 
@@ -500,19 +500,3 @@ button {
     box-sizing: border-box;
 }
 
-
-
-@keyframes shine{
-    10% {
-        opacity: .72;
-        /* background: green; */
-    }
-    100% {
-      opacity: 1;
-      /* background: hotpink; */
-    }
-  }
-
-  .shine {
-      animation: shine 2s;
-  }
