@@ -1,0 +1,270 @@
+{
+    "intro": {
+        "en": "introduction",
+        "zh": "簡介"
+    },
+    "skills": {
+        "en": "skills",
+        "zh": "專業技能"
+    },
+    "project": {
+        "en": "projects",
+        "zh": "作品集"
+    },
+    "contact": {
+        "en": "contact me",
+        "zh": "連絡我"
+    },
+    "coverLetter": {
+        "en": [
+            "It was wo appreciated that you visit my website and consider me as a candidate for this job.  I am a self-taught developer with one year work experience.",
+            "I worked as a front-end web developer at an online shopping mall company. I built new web pages according to art work, and work with backend engineers. I also modify or renew website. therefore, I am confidence in creating new webpages and good at understanding other people’s code.",           
+            "I also work in a gaming company, in which I built game sheet. I need to create RWD layout, and connect with API. I can create the whole page using only plain javascript(vanilla javascript) without any framework.",
+            "Thank you very much for your time. hope to hear from you soon. Best Regards,",
+            "Lisa Wang"
+        ],
+        "zh": [
+            "玉婷自學網頁設計,主要為前端網頁部份。非常熟悉HTML，CSS和Javascript，熱愛手刻，且熟悉抓取後端API，代入前端...等。",
+            "因為是自學，所以遇到新的網頁效果、新的框架、新的技術等都可以很快的自行在網路上找到資源，解決問題。",
+            "有一年的前端開發工作經驗。第一份工作內容有開發維護網路商城的網站。工作分為2部份：優化及更新現有網頁，開發新的新網頁，主要是依美術的圖做切版及網頁視覺效果，RWD互動...等。第二份工作主要是關發新的遊戲說明頁、選單、遊戲表，主要是負責版型及接API，為速度考量，都用手刻，不代入框架。",
+            "而且我用英文及中文自學，所以可以利用的資源更多，所以專業人員、同事及客戶溝通專業術語都沒問題",
+            "希望能有機會可以為貴司服務，謝謝您"
+        ]
+    },
+    "desc": {
+        "en": "Description",
+        "zh": "技能簡介"
+    },
+    "description": {
+        "en": [
+            "Strong in HTML5, CSS, Javascript",
+            "Proficien Responsive Website Deign, flex, grid",
+            "Expert in front-end frameworks-jQery, Boostrap, swiper, sementic UI",
+            "development tools: Chrome Dev Tool, vs code, cloud9",
+            "CSS RWD：iframe, overlay, slider, autoplay, audio, fade, swiper, animation...etc",
+            "problem solving: Stackoverflow, MDN, W3Schools"
+            ],
+        "zh": [
+            "熟悉 HTML5 & CSS3，能夠解決跨瀏覽器的相容性",
+            "熟悉 flexbox, CSS grid 的切版方式，應用RWD網頁，手機、電腦，平面各尺吋",
+            "熟悉 CSS framework，API，如 Bootstrap,Swiper",
+            "熟悉 Javascript, DOM 及各種API應用",
+            "CSS網頁互動效果如：iframe,overlay, slider, autoplay, audio, fade, swiper, animation.",
+            "開發工具： Chrome Dev Tool 除錯、修改, sublime text 3, cloud9",
+            "API文件閱讀能力、遇到問題會上Stackoverflow, MDN, W3Schools查詢並解決",
+            "基本photo shop修圖"
+        ]
+    },
+    "contact2": {
+        "en": "If you are interested in my projects, please feel free to contact with me.",
+        "zh": "如果你對我的作品有興趣，歡迎與我連繫，謝謝您..."
+    },
+    "name": {
+        "en": "Your name",
+        "zh": "姓名"
+    },
+    "phone": {
+        "en": "Your phone number",
+        "zh": "電話號碼"
+    },
+    "email": {
+        "en": "Your email",
+        "zh": "email"
+    },
+    "message": {
+        "en": "Message",
+        "zh": "留言"
+    },  
+    "address": {
+        "en": "New Taipei City, Taiwa",
+        "zh": "台灣新北市板橋區"
+    },
+    "submit": {
+        "en": "Submit",
+        "zh": "確認"
+    },
+    "y2019": {
+        "en": "Year 2019 - creative websites",
+        "zh": "2019作品: 開發新網頁"
+    },
+    "alert_ok": {
+        "en": "Your message has been sent",
+        "zh": "你的資料已送出"
+    },
+    "alert_ng": {
+        "en": "Wrong code, try again please",
+        "zh": "密碼錯誤，請再試一次"
+    },
+    "topic": {
+        "en": [
+            "HTML",
+            "CSS/SASS",
+            "Javascript",
+            "jQuery"
+        ],
+        "zh": [
+            "HTML",
+            "CSS/SASS",
+            "Javascript",
+            "jQuery"
+        ]
+    },
+    "projects": [
+        {
+            "year": {
+                "en": "Projects of the Year 2019",
+                "zh": "2019年作品"
+            },
+            "cards": [
+                {
+                    "img": "img/ecommerce.JPG",
+                    "link": "https://lisawcoding.github.io/ecommerce/",
+                    "en": 
+                        {   
+                            "title": "e-coomerce/online shopping mall",
+                            "des": [
+                                "with shopping cart function",
+                                "get Json products detials",
+                                "zoom in function for product details, swiper function, autoplay function",
+                                "localStorage function for store shopping cart products",
+                                "3 html pages redirect pages",
+                                "RWD"
+                            ]
+                        },
+                    "zh":
+                        {
+                            "title": "線上購物網站",
+                            "des": [
+                                "有購物車功能",
+                                "使用json代入產品資料",
+                                "放大鏡功能、手滑動功能、自動播放功能",
+                                "localStorage功能存取購買資料",
+                                "3層頁面：首頁、產品頁、購物車頁面",
+                                "RWD電腦、平板、手機視覺"
+                            ]
+                        }
+                },
+                {
+                    "img": "img/api.png",
+                    "link": "https://lisawcoding.github.io/api/",
+                    "en": 
+                        {
+                            "title": "Central Weather Bureau api",
+                            "des": [
+                                "fetch to get the Central Weather Bureau api"
+                            ]
+                        },
+                    "zh":
+                        {
+                            "title": "氣象局API網站",
+                            "des": [
+                                "用fetch連中央氣象局的api資料"
+                            ]
+                        }
+                }
+            ]
+        },
+        {
+            "year": {
+                "en": "Projects of the Year 2018",
+                "zh": "2018年作品"
+            },
+            "cards": [
+                {
+                    "img": "img/jpfood.jpg",
+                    "link": "https://lisawcoding.github.io/clone-japanese-food/", 
+                    "en": 
+                        {   
+                            "title": "Clone Website: 定食8",
+                            "des": [
+                                "plain javascript, including Swiper framework for touch slider effect",
+                                "CSS grid for RWD",
+                                "Animation: swiper, fadding, autoplay, overlay, responsive navigation effect"
+                            ]
+                        },
+                    "zh":
+                        {
+                            "title": "複製網頁-定食8",
+                            "des": [
+                                "使用HTML, CSS, Javascript，不需Bootstrap",
+                                "RWD網頁，CSS grid, flex",
+                                "網頁效果有: 手滑swiper, 淡入淡出fadding, 自動播放／手選播放autoplay, 浮覆蓋層overlay, 互動導覽列responsive navigation effect...等"
+                            ]
+                        }
+                },
+                {
+                    "img": "img/stadium.jpg",
+                    "link": "https://lisawcoding.github.io/clone-stadium/",
+                    "en": 
+                        {
+                            "title": "Clone Website： 板樹體育館",
+                            "des": [
+                                "plain javascript",
+                                "CSS grid for responsive layouts",
+                                "Animation: swiper, fadding, autoplay, responsive navigation effect"
+                            ]
+                        },
+                    "zh":
+                        {
+                            "title": "複製網頁： 板樹體育館",
+                            "des": [
+                                "使用HTML, CSS, Javascript，不需Bootstrap",
+                                "RWD網頁，CSS grid, flex",
+                                "網頁效果有：淡入淡出fadding, 自動播放／手選播放autoplay,  互動導覽列responsive navigation effect...等"
+                            ]
+                        }
+                },
+                {
+                    "img": "img/tmc.jpg",
+                    "link": "https://lisawcoding.github.io/clone-tcmc/",
+                    "en": 
+                        {
+                            "title": "Clone Website：台積電",
+                            "des": [
+                                "HTML, CSS, Javascript",
+                                "Animation: fadding, autoplay effect"
+                            ]
+                        },
+                    "zh":
+                        {
+                            "title": "複製網頁：台積電",
+                            "des": [
+                                "使用HTML, CSS, Javascript",
+                                "網頁效果有：淡入淡出fadding, 自動播放／手選播放autoplay,  互動導覽列responsive navigation effect...等"
+                            ]
+                        }
+                },
+                {
+                    "img": "img/index1.jpg",
+                    "link": "https://lisawcoding.github.io/index-paper/",
+                    "en": 
+                        {
+                            "title": "creative index style website",
+                            "des": [
+                                "HTML, CSS, Javascript",
+                                "RWD, pc, tablet, and mobile shape drawn by CSS",
+                                "audio effect"
+                            ]
+                        },
+                    "zh":
+                        {
+                            "title": "創新網頁",
+                            "des": [
+                                "使用HTML, CSS, Javascript",
+                                "用CSS畫出手機／平板／電腦的圖形，隨螢幕大小改變樣式",
+                                "加入音效"
+                            ]
+                        }
+                }
+            ]
+        }
+    ]
+    
+
+
+
+    
+
+
+
+}

@@ -1,245 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>eEommerce</title>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--<meta http-equiv="X-UA-Compatible content=" ie=edge">-->
+      <!-- <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed|Lobster" rel="stylesheet"> -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-    <meta name="keywords" content="shopping mall, buy, products, online">
-    <meta name="description" content="e-commerce, popular shopping mall, professional online shopping mall">   
-
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    
-    <link rel="stylesheet" href="header-footer.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="./img/logo.jpg">
-
-</head>
-<body>
-
-<header>
-        <nav class="nav-1">
-          <div class="width-1200">
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+      <link rel="icon" href="https://previews.123rf.com/images/hellocaicai/hellocaicai1802/hellocaicai180200422/95965943-cartoon-mushroom.jpg">
+      <title>作品集</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+   <body>
+      <nav class="navbar">
+         <div class="container">
+            <div class="navItem-container">
+               <li class="navItem active" onclick="clickNav(0)" data-lan="intro"></li>
+               <li class="navItem" onclick="clickNav(1)" data-lan="skills"></li>
+               <li class="navItem" onclick="clickNav(2)" data-lan="project"></li>
+               <li class="navItem" onclick="clickNav(3)" data-lan="contact"></li>
             </div>
-            <div class="logo">
-                <a href="index.html">
-                    <h1><span id="curvedarrow"></span><span style="color: orange">My</span>Mall</h1>
-                </a>
+            <div class="language-container">
+               <!-- <li class="lan"></li> -->
+               <li id="zh" >文</li>
+               <li id="en">A</li>
+               <!-- <li class="hamburger"><i class="fas fa-bars"></i></li> -->
+               <li class="hamburger">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+               </li>
             </div>
-            <div class="right">
-              <ul>
-                <!-- <li><a href="#" class="login">Login</a></li>|
-                <li><a href="#" class="register">Register</a></li>| -->
-                <!-- <li><i class="fas fa-user-circle"></i></li> -->
-                <li class="shopping-cart">
-                    <a href="cart.html">
-                        <i class="fas fa-shopping-cart"></i>
-                        <div class="qty">0</div>
-                    </a>
-                </li>
-              </ul>
+         </div>
+      </nav>
+      <!--navbar----------------------------------------------------------------------------------------------------------------------------->
+      <main class="pimg1">
+         <section class="section coverletter">
+            <div class="container">
+               <div class="id-photo">
+                        <img src="img/me.jpg" alt="me" class="slide-active">
+                        <img src="img/resume2.jpg" alt="resume1">
+                        <img src="img/resume3.jpg" alt="resume2">
+                  <div class="dots">
+                     <div class="arrow prev"></div>
+                     <div class="dot dot-active"></div>
+                     <div class="dot"></div>
+                     <div class="dot"></div>
+                     <div class="arrow next"></div>
+                 </div>
+               </div>
+               <a href="https://github.com/lisawcoding" target="_blank">
+                  <img src="img/icon/github.png" alt="github" id="github">
+               </a>
+               <article>
+                  <h2 data-lan="intro"></h2>
+                  <div data-list="coverLetter"></div>
+               </article>
             </div>
-          </div>
-        </nav>
-        <nav class="nav-2">
-            <div class="width-1200">
-            <ul class="tabs">
-                <li><a class="active-btn">Home Page</a></li>      
-                <li><a href="myProduct.html">Product Page</a></li>      
-                <li><a href="cart.html">Shopping Cart Page</a></li>      
-            </ul>
-        <div class="back-icon" href="javascript:history.back()"></div>      
-            <div class="swiper-container news">
-            <ul class="swiper-wrapper">
-                <li class="swiper-slide"> 2019 new sales up to 20% off</li>
-                <li class="swiper-slide"> gift for free</li>
-                <li class="swiper-slide"> buy 1 get 1 free now</li>
-            </ul>
+         </section>
+         <!--skills---------------------------------------------------------------------------------------------------------------------------------------->
+         <section class="section skills">
+            <div class="container">
+                  <h2 data-lan="skills"></h2>
+                  <ul class="topic" data-list="topic">
+                  </ul>
+                  <div class="description">
+                     <h3 data-lan="desc"></h3>
+                     <div data-list="description"></div>
+                  </div>
             </div>
-            </div>    
-        </nav>
-        <nav class="hidden-menu"></nav>
-</header>
-      <!-- header -->
-<section id="hero">
-<div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image: url('https://source.unsplash.com/275x270/?baby')"></div>
-            <div class="swiper-slide" style="background-image: url('https://source.unsplash.com/275x270/?toy')"></div>
-            <div class="swiper-slide" style="background-image: url('https://source.unsplash.com/275x270/?beauty')"></div>
-            <div class="swiper-slide" style="background-image: url('https://source.unsplash.com/275x270/?sports')"></div>
-            <div class="swiper-slide" style="background-image: url('https://source.unsplash.com/275x270/?cat')"></div>
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="arrow swiper-button-prev"></div>
-        <div class="arrow swiper-button-next"></div>
-        <div class="banner">
-            <h1>our best <br>collection</h1>
-            <!-- <button id="shop-now"><a href="#discount-banner-div">shop now</a></button> -->
-            <button id="shop-now">shop now</button>
-        </div>
-    </div>
-</section>
-<section id="discount-banner-div" class="width-1200">
-    <div><p>$200 off</p></div>
-    <div><p>10% off</p></div>
-    <div><p>1 get 1 free</p> </div>
-    <div><p>free shipping</p> </div>
-    <div><p>extra bounus</p> </div>
-    <div><p>new arrival</p> </div>
-    <!-- <img src="img/discount.jpg" alt="discount photo"> -->
-</section>
-<section id="products-div">
-    <section class="best-seller-div width-1200"> 
-        <h2 class="section-title">best sellers</h2>                  
-        <div class="sector-div">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="product-wrapper swiper-slide">
-                        <a href="myProduct.html"  target="_blank">
-                            <h1></h1>
-                            <div class="img-container square">
-                                <img src="" alt="product" class="square-img">
-                                <!-- <button data-id="1">add to cart</button> -->
-                            </div>
-                            <div class="info">
-                                <h3 class="content"><sapn class="department"></sapn><br>Lorem ipsum dolor sit amet.</h3> 
-                                <h4 class="price"></h4>
-                            </div>                            
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-            <div class="swiper-button-prev arrow"></div>
-            <div class="swiper-button-next arrow"></div>
-    </section>
-    <section class="whats-new-div width-1200"> 
-        <h2 class="section-title">What's new</h2>    
-        <div class="swiper-container">
-            <div class="grid-div swiper-wrapper">
-                <div class="product-wrapper swiper-slide">
-                  <a href="myProduct.html" target="_blank">
-                        <h1></h1>
-                        <div class="img-container">
-                            <img src="" alt="product">
-                            <button data-id="">add to cart</button>
+         </section>
+         <!--projects---------------------------------------------------------------------------------------------------------------------------    -->
+         <section class="section projects">
+            <div class="container">
+               <h2 data-lan="project"></h2>
+                  <div class="year clone">
+                     <h3></h3>
+                     <div class="cards" data-div="project">
+                        <div class="card clone">
+                           <a href="#" target="_blank"  style="position:relative">
+                                <img src="" alt="">
+                              <!-- <div class="iframe-wrapper">
+                                 <iframe src="" allowfullscreen frameborder="0" scrolling="no"></iframe>
+                              </div> -->
+                              <div class="title"><i></i></div>
+                              <ul class="description"> 
+                              </ul>
+                           </a>
                         </div>
-                        <div class="info">
-                            <h3></h3> 
-                            <h4 class="price"></h4>
-                            <h3 class="content"><span class="department"></span> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita iure quis, facere nulla dignissimos dolorum quo impedit aperiam recusandae aspernatur rerum blanditiis enim. Similique, nihil?</h3>
-                        </div>   
-                    </a>  
-                </div>
+                     </div>
+                  </div>
+            </div>   
+         </section>
+         <!-- contact form--------------------------------------------------------------------------------------------------------------------------------- -->
+         <section class="section contact">
+            <div class="container">
+               <h2 data-lan="contact"></h2>
+               <div class="icons">
+                  <a href="mailto:tolisacoding@gmail.com" rel="nofollow" target="_blank">
+                     <img src="img/icon/gmail.png" alt="gmail">
+                  </a>
+                  <a href="http://line.me/ti/p/@bqk1207g" rel="nofollow" target="_blank">
+                     <img src="img/icon/line.png" alt="line">
+                  <a href="skype:lisa.wang27?call">
+                     <img src="img/icon/skype.png" alt="skype">
+                  </a>
+               </div>
+               <h3 data-lan="contact2"></h3>
+                  <div class="contact-info">
+                     <i class="fas fa-map-marker-alt" data-lan="address"></i>
+                     <i class="fas fa-phone">+886 908117599</i>
+                     <i class="fas fa-envelope">tolisacoding@gmail.com</i>
+                  </div>
+               <form id="contact-form">
+                  <div>
+                     <label for="name" data-lan="name"></label>
+                     <input type="text" id="name" name="name" placeholder="Enter your name.." required>
+                  </div>
+                  <div>
+                     <label for="phone" class="phone" data-lan="phone"></label>
+                     <input type="tel" id="phone" name="phone" placeholder="Enter your phone number..">
+                  </div>
+                  <div>
+                     <label for="email" data-lan="email"></label>
+                     <input type="email" id="email" name="email" placeholder="Enter your e-mail.." required>
+                  </div>
+                  <div>
+                     <label for="message" data-lan="message"></label>
+                     <input type="text" id="message" name="message" placeholder="Message...">
+                  </div>
+                  <div class="check-number">
+                     <div class="a"></div>
+                     <span>+</span>
+                     <div class="b"></div>
+                     <spn>=</spn>
+                     <input class="sum" type="number" placeholder="">
+                  </div>
+                  <div>
+                     <input type="submit" value="" class="submit" data-lan="submit">
+                  </div>
+                  <div class="alert-ok" data-lan="alert_ok"></div>
+                  <div class="alert-ng" data-lan="alert_ng"></div>
+               </form>
             </div>
-        </div>     
-    </section>
-    <section id="department-div" class="width-1200">
-        <h2 class="section-title">Shop by Category</h2>
-            <div class="department-tab-div"></div>
-            <div class="department-content-div">
-            </div>
-    </section>
-    <section class="clone-sample">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <a href="myProduct.html" target="_blank">
-                        <h1></h1>
-                        <div class="img-container square">
-                            <img src="" alt="" class="square-img">
-                        </div>
-                        <div class="info">
-                            <h3 class="content"><sapn class="department"></sapn>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat.</h3> 
-                            <h4 class="price"></h4>
-                        </div>                        
-                    </a>
-                </div>
-            </div>
-        </div>  
-        <div class="swiper-container only">
-            <div class="swiper-wrapper"></div>
-            <div class="swiper-button-prev arrow"></div>
-            <div class="swiper-button-next arrow"></div>
-        </div>      
-    </section>
-</section>
-    <!-- <section class="cart-div overlay"> -->
-        <!-- <div class="cart-area">
-            <div class="close-icon"></div>
-            <h1>your cart</h1>
-            <div class="item-div">   
-                    <img src="https://source.unsplash.com/275x270/?cat" alt="product">
-                <div class="info">
-                    <h3>Product 1</h3>
-                    <h4 class="price"><span>$</span>0</h4>
-                    <h4 class="remove-item">remove</h4>
-                </div>
-                <div>
-                    <div class="add"></div>
-                    <div class="item-amount">1</div>
-                    <div class="deduct"></div>
-                </div>
-            </div>
-            <div class="cart-footer">
-                    <h3>your total: $<span class="cart-total">0</span></h3>
-                    <button></button>
-                </div>
-        </div> -->
-<!-- </section> -->
+         </section>
+         <div class="container" style="position:relative">
+            <div class="banner"></div>
+         </div>
+      </main>
+      <div id="topBtn" class="overlay" onclick="goToTop()">
+      </div>
+      <!--audio^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
+      <audio class="game">
+         <source src="audio/game.mp3" type="audio/mpeg">
+         Your browser does not support the audio element.
+      </audio>
 
-
-
-
-<!-- tool-div -->
-<section class="tool-div">
-          <div class="phone-call">
-            <i class="fas fa-phone-volume"></i>
-          </div>
-          <div class="app">
-            <a href="http://line.me/ti/p/@bqk1207g" rel="nofollow" target="_blank">
-              <i class="fab fa-whatsapp"></i>
-            </a>       
-          </div>
-        <div class="message-icon"><i class='far fa-comment-dots call-icon'></i></div>
-        <div class="go-top-btn"></div>
-        <div class="overlay"></div>  
-        <div class="call-out-div">
-            <div class="call-btn" class="call-btn">
-                <a href="tel:+886908117599">
-                    <h1>CALL NOW</h1>
-                </a>  
-            </div>
-            <div class="cross"></div>
-            <div class="info">
-                <h1>TEL: XXXXXXX</h1>
-                <h1>Business hours:</h1>
-                <p>xxx</p>
-                <p>xxx</p>
-            </div> 
-        </div>
-      </section>
-<!-- tool-div -->
-
-<!-- footer -->
-<footer>
-    <!-- <div> -->
-        <p>Good Coding Company </p>
-        <p>Location: Taipe Taiwan  Tel: +886 2 1234567</p>
-        <p>&#9400;tolisacoding, Inc.</p>
-    <!-- </div> -->
-
-</footer>
-<!-- footer -->
-<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-<script type="text/javascript" src="header-footer.js"></script>
-<script src="app.js"></script>
-</body>
+      <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+      <script type="text/javascript" src="resume.js"></script>
+   </body>
 </html>
