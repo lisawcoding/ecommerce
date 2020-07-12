@@ -201,11 +201,12 @@ fetch(url)
           delay: 3700,
           disableOnInteraction: false,
         },
+        slidesPerView: 6,
       spaceBetween: 17,
       breakpoints: {
         370: {
-          slidesPerView: 2,
-          slidesPerGroup: 2,
+          slidesPerView: 1,
+          slidesPerGroup: 1,
         },
         480: {
           slidesPerView: 2,
@@ -219,14 +220,9 @@ fetch(url)
           slidesPerView: 4,
           slidesPerGroup: 4,
         },
-        900: {
+        1120: {
           slidesPerView: 5,
           slidesPerGroup: 5,
-    
-        },
-        1120: {
-          slidesPerView: 6,
-          slidesPerGroup: 6,
         },         
       }
     })
@@ -238,16 +234,14 @@ fetch(url)
       bestSellerSwiper.autoplay.start();
     })
 
-      // department-div swiper
   var departmentSwiper = new Swiper('#department-div .swiper-container', {
 
-    // slidesPerView:6,
-    // spaceBetween:17,
       speed: 100,
       navigation: {
         nextEl: '#department-div .swiper-button-next',
         prevEl: '#department-div .swiper-button-prev',
       },
+      slidesPerView: 6,
       breakpoints: {
         370: {
           slidesPerView: 2,

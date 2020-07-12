@@ -56,10 +56,11 @@ footer {
     background: var(--red);
     text-align: center;
     /* padding: 1rem 0; */
-    height: 12vw;
+    /* height: 12vw; */
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 2vw 0;
 }
 /* footer */
 
