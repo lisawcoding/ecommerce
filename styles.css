@@ -126,7 +126,7 @@ button {
 /* products-div */
 #products-div * {
     font-weight: 200;
-    /* font-size: 1vw; */
+    font-size: 12px;
 }
 #products-div .section-title {
     text-transform: capitalize;
