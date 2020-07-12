@@ -244,8 +244,8 @@ fetch(url)
       slidesPerView: 6,
       breakpoints: {
         370: {
-          slidesPerView: 2,
-          slidesPerGroup: 2,
+          slidesPerView: 1,
+          slidesPerGroup: 1,
         },
         480: {
           slidesPerView: 2,
