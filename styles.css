@@ -49,7 +49,7 @@
 }
 button {
     text-transform: uppercase;
-    font-size: 2vw;
+    /* font-size: 2vw; */
     transition: all .25s linear;
     cursor: pointer;
     padding: .5rem 1rem;
@@ -78,7 +78,7 @@ button {
     margin: 1rem auto;
     text-align: center;
     font-weight: 900;
-    font-size: 2.1vw;
+    /* font-size: 2.1vw; */
     flex-wrap: wrap;
 }
 #discount-banner-div div p {
@@ -93,7 +93,7 @@ button {
     width: 16%;
     position: relative;
     background: var(--red);
-    font-size: 1.5vw;
+    /* font-size: 1.5vw; */
 }
 #discount-banner-div div:nth-of-type(2){
     background: green;
@@ -130,7 +130,7 @@ button {
 }
 #products-div .section-title {
     text-transform: capitalize;
-    font-size: 1.5vw;
+    /* font-size: 1.5vw; */
     font-weight: 700;
     /* margin: 1.7rem 0 .5rem 0; */
     border-left: 5px solid var(--red);
