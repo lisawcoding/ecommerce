@@ -14,24 +14,6 @@ li {
 a {
     text-decoration: none;
 }
-/* body {
-    min-width: 1200px;
-} */
-  /* object[data*="header.html"]{
-    min-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 999;
-}
-  object[data*="footer.html"]{
-    min-width: 1200px;
-    margin: 0 auto;
-    width: 100%;
-    z-index: 999;
-} */
-/*globel*/
 
 .path a:first-child{	
     color: var(--red);
@@ -71,7 +53,6 @@ a {
 	padding-top: 100%;
 }
 .img-zoon-container {
-    /*border: 2px dotted hotpink;*/
     position: absolute;
 }
 .swiper-wrapper {
@@ -161,9 +142,6 @@ a {
 .product-div .right .qty .option * + * {
 	border-left: none !important;
 }
-/*.product-div .right .qty .subtract, .product-div .right .qty .add {
-	position: relative;
-}*/
 .product-div .right .qty .subtract div{
     border: none;
     margin: 0;
@@ -215,10 +193,6 @@ a {
     background: var(--red);
     color: #fff;
 }
-/* .product-div .right input[value="BUY NOW"]:hover img{
-	background: rgba(124, 238, 206, .7) !important;
-} */
-
 
 .product-div .right .info-2 h3 {
     display: flex;
@@ -239,12 +213,10 @@ a {
     font-size: 15px;
 }
 .page-index {
-    /* border: 1px solid var(--green); */
     padding: .1rem .5rem;
     text-align: center;
     background: #fff;
     border-radius: 30px;
-    /* line-height: 47px; */
     box-sizing: border-box;
     color: var(--red);
 }
@@ -252,10 +224,6 @@ a {
 .description {
     margin-top: 1rem;
 }
-/* .product-div .right .qty input[name="qty"] {
-    -moz-appearance: textfiled;
-    -ms-progress-appearance: textfiled;
-} */
 .product-div .right .qty input[name="qty"]::-webkit-inner-spin-button, /* turn off number input spinners*/
 .product-div .right .qty input[name="qty"]::-webkit-outer-spin-button { 
   -webkit-appearance: none;
@@ -448,11 +416,6 @@ content: "";
     .product-div .right .info-2 {
         order: 4;
     }
-    .img-zoon-container {
-        /* position: inherit;
-        transform: none !important; */
-    }
-
     .main-img {
         height: 60vh;
     }
@@ -472,7 +435,6 @@ content: "";
 	.page-index {
         display: block;
         margin: 0 auto;
-        /* font-size: 1.5rem; */
             position: absolute;
         bottom: .5rem;
         z-index: 99;
@@ -510,7 +472,6 @@ content: "";
         margin-left: 50%;
         transform: translateX(-50%);
         width: 60%;
-        /* border-radius: 50px; */
         height: 37px;
         background: var(--red);
         color: #fff;
@@ -520,7 +481,6 @@ content: "";
         background: orange;
     }
     .small-img-div .img-wrapper {
-        /* height: 50vh; */
         text-align: center;
     }
     #added-alert {
@@ -561,12 +521,11 @@ content: "";
 
 input[type='number']::-webkit-outer-spin-button,
 input[type='number']::-webkit-inner-spin-button {
-    /* display: none; <- Crashes Chrome on hover */
     -webkit-appearance: none;
-    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+    margin: 0;
 }
 input[type='number'] {
-    -moz-appearance:textfield; /* Firefox */
+    -moz-appearance:textfield;
 }
 
 
