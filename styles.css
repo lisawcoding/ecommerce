@@ -11,10 +11,7 @@
     position: relative;
 }
 #hero .arrow {
-    background: rgba(0,0,0, 0.5);
-    opacity: .7;
-    color: #fff;
-    font-weight: 900;
+    font-size: 5em;
     visibility: hidden;
 }
 #hero:hover .arrow {
@@ -184,11 +181,6 @@ button {
     background: var(--red);
     color: #fff;
 }
-
-.arrow {
-    color: var(--red);
-    cursor: pointer;
-}
 .best-seller-div {
     position: relative;
 }
@@ -215,9 +207,6 @@ button {
     color: var(--red);
     transform: scale(1.1);
     text-align: center;
-}
-.arrow:after {
-    font-size: 1.5rem !important;
 }
 #department-div .swiper-slide:hover{
     border: 1px solid var(--red);
